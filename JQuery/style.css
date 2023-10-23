@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Changes the size and style of the letters */
+html {
+    font-size: 40px;
+    font-family: 'Kanit', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero section */
+/* Changes the background of the website */
+#hero{
+    background-image: url('Red Background.png');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: .7;
+    z-index: -1;
+}
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+/* The header of a first title */
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 2.5rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(1){
+    animation: text_reveal .5 ease forwards;
+    animation-delay: 1.5s;
+}
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+#hero.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: red;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+}
+#hero.cta:hover{
+    color: white;
+    background-color: rgb(202, 24, 60);
+}
+/* End Hero section */
+
+/* Explainations section */
+#Explainations .Explainations{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#Explainations .section-title{
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0rem;
+    text-align: center;
+}
+/* End Explainations section */
+
+
+
+/* The Keyframes of the text boxes */
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+        font-weight: 500px;
+    }
+}   
+/* The End of the keyframes */
+

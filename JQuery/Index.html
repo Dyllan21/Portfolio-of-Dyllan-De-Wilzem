@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="8">
+    <meta name="viewport" content="width=devise-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> JQUERY TUTS</title>
+</head>
+<body>
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>JQUERY TUTS<span></span></h1>
+                <a href="#" type="button" class="cta">Menubar</a>
+                <a>
+                    <ul>
+                        <li><a href="#Applying Styles">Applying Styles</a></li>
+                        <li><a href="#atrr(key,func) Method">atrr(key,func) Method</a></li>
+                        <li><a href="#hasClass(class) Method">hasClass(class) Method</a></li>
+                        <li><a href="#text() Method">text() Method</a></li>
+
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Explainations Section  -->
+    <section id="Explainations">
+        <div class="Explainations container">
+            <div class="Explainations-top"></div>
+                <h1 class="section-title">Explainations<span></span></h1>
+                <p> This is where you can see the examples of the code,
+                what it is and how the code should be placed</p>
+            </div>
+            <div class="Explainations-bottom">
+             <div class="Explainations-item">
+                <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEI0lEQVR4nO2aS08TURTH54Po2o9goqVFSKelw6O0nVBKIwqdaGNlYdDoAlsRo90Yii4IjSILohKKiYqhQQtGrSYK4aXdmCCvsuAhuiZecweo82zvYG+nA3OSf9J27kzv+c2555xpL0Hopptuuummm266EQRRbTt73O5gll3uwB/a0wI0LXcA2GubgfVULSANFDAbbL/NJ23PLCcsx2Sdd7kvaN9xgVzuALCaalgIOyCoTbKk5qgIgN3BLKs9WVyy25syAHY1IALgOghhnyUKuADMBuqXCAAtOKmizCmkphnZyp0iCMIxOQGQReDI/yhvALyMBYTjRhD5ZGAVjpcAr88ie1wtCeeVNwDheIn4y0aMWY+rBoEzr4IBiOSYVHvCBJiYmVX7uEl23M0xE/DFzMA3xB8HX2fOT8ifv6f8LwGfhQcBOt/Q/C/Usk0mlCgFZwZI0Lgr6ITUuM6PBtAcM2fGQQh7xxjO5/Ba8JoFBUDmEKrzQsd4d3/cxB8XkwaAAqEoAIQknIfv5UL40qsy3lj4nruEpK4lByHvACh/CNQl14EnBVi5k2ug0h+UBXBDZsJBmQmz4T/Iv8sdglwRkrvmGxN+AO7kWsZ5LgQpAEqd30l+Rt54CKNTMqrQIOQdgEfg/J6EAJSGKkr472dpqQaAUZisUMMfBQK3uqi2BJh9AEANfyXVJe8AKv1BHgT4mjp/PS9LQEn4q7YESAVlUEm2Vhr+qAlW9T4ghAhBSfgrqS6q9wERxFBFDX/VGyG3gj5ASbaG7S73GGyHpa6jeivsQSyDKBC42ZoLAD4IwZyQDUD3hz7weX4VpFZ+glR6S1JTCxvg+ZcF0P/uO6ue4Ungbw2rByDCeRwWPuZmHn/hY+6YfPKD50STfbJOiyAsbmQAsBBeTuBdAuEC/CAy8WMVGcDs0iYPQO/oHN4+wCv4vQCHsoW9UKOzKzwAV+88xFsGyQII1fnE1zTP+ba7/fj7ALKIAIx/W+UBCHU9wd8HNJLnQFfDIxBtHMAmVADZIGBLgl3eXqzOKwUgBwFbGYxidn4/AKQgXOvoPlwAUuktEJ/hV4SW1tvaXAJT8+v8bD+XZpULwIygJ4gOT+a/DzgNkyBmCIP33rMQYJPDrfOJmWX8AMgi1+MXb/EsAVu5dv4e74u9ztkUXQ7ez54EXRrfINE7NAamFzfYsOfe+Qcj0+DKrR4+tJPUlgiA3elLq+1EobbImA3UUxGAqiqv1anxKJCSqy4ALJxNUqTBtm41WY8QcjvFHA5mSevLgXUcbpOzN2Wch/uC4J2Xdb4QhpLQiINs5GEHQMuEqw7AoPEIoN0Biq6/iGWnaa3DB6ylnCxurN6mKuraiGIyur5lCVc255ewHVmMVdtEMRmNsZxpIlnShx2AbrrppptuuulGaNH+Arc9LzbYiFr8AAAAAElFTkSuQmCC"/>
+                </div>
+                <h2 id="Applying Styles">Applying Styles:</h2>
+                <p>The add Class method can be used to fill in the defined style sheets onto all of the matched elements. 
+                    You can also specify multiple classes that are separated by space</p>
+             </div>
+            </div>
+    <!-- Code  -->
+            <h2>Code:</h2>
+            <pre>
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;the title&lt;title&gt;
+            &lt;script type="text/javascript"
+            src="/jquery/jquery-1.3.2.min.js"&gt;&lt;script&gt;
+            &lt;script type="text/javascript" language="javascript"&gt;
+            $(document).ready(function() {
+            $("em").addClass("selected");
+            $("#myid").addClass("highlight");
+            });
+            &lt;script&gt;
+            &lt;style&gt;
+                .selected { color:red; }
+                .highlight { background:yellow; }
+                &lt;style&gt;
+            &lt;head&gt;
+            &lt;body&gt;
+                &lt;em title="Bold and Brave"&gt;This is first paragraph.&lt;em&gt;
+                &lt;p id="myid"&gt;This is second paragraph.&lt;p&gt;
+            &lt;body&gt;
+            &lt;html&gt;
+            </pre>
+    <!-- End Code  -->
+        </div>
+    <!-- Display  -->
+            <h2>Display:</h2>
+            <code>
+            <!DOCTYPE html>
+            <html lang="en">
+            <html>
+            <head>
+            <title>the title</title>
+            <script type="text/javascript"
+            src="/jquery/jquery-1.3.2.min.js"></script>
+            <script type="text/javascript" language="javascript">
+            $(document).ready(function() {
+            $("em").addClass("selected");
+            $("#myid").addClass("highlight");
+            });
+            </script>
+            <style>
+                .selected { color:red; }
+                .highlight { background:yellow; }
+                </style>
+            </head>
+            <body>
+                <em title="Bold and Brave">This is first paragraph.</em>
+                <p id="myid">This is second paragraph.</p>;
+        </body>
+            </html>
+            </code>
+    <!-- End Display  -->
+    </section>
+
+            <div class="Explainations-bottom">
+             <div class="Explainations-item">
+                <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEI0lEQVR4nO2aS08TURTH54Po2o9goqVFSKelw6O0nVBKIwqdaGNlYdDoAlsRo90Yii4IjSILohKKiYqhQQtGrSYK4aXdmCCvsuAhuiZecweo82zvYG+nA3OSf9J27kzv+c2555xpL0Hopptuuummm266EQRRbTt73O5gll3uwB/a0wI0LXcA2GubgfVULSANFDAbbL/NJ23PLCcsx2Sdd7kvaN9xgVzuALCaalgIOyCoTbKk5qgIgN3BLKs9WVyy25syAHY1IALgOghhnyUKuADMBuqXCAAtOKmizCmkphnZyp0iCMIxOQGQReDI/yhvALyMBYTjRhD5ZGAVjpcAr88ie1wtCeeVNwDheIn4y0aMWY+rBoEzr4IBiOSYVHvCBJiYmVX7uEl23M0xE/DFzMA3xB8HX2fOT8ifv6f8LwGfhQcBOt/Q/C/Usk0mlCgFZwZI0Lgr6ITUuM6PBtAcM2fGQQh7xxjO5/Ba8JoFBUDmEKrzQsd4d3/cxB8XkwaAAqEoAIQknIfv5UL40qsy3lj4nruEpK4lByHvACh/CNQl14EnBVi5k2ug0h+UBXBDZsJBmQmz4T/Iv8sdglwRkrvmGxN+AO7kWsZ5LgQpAEqd30l+Rt54CKNTMqrQIOQdgEfg/J6EAJSGKkr472dpqQaAUZisUMMfBQK3uqi2BJh9AEANfyXVJe8AKv1BHgT4mjp/PS9LQEn4q7YESAVlUEm2Vhr+qAlW9T4ghAhBSfgrqS6q9wERxFBFDX/VGyG3gj5ASbaG7S73GGyHpa6jeivsQSyDKBC42ZoLAD4IwZyQDUD3hz7weX4VpFZ+glR6S1JTCxvg+ZcF0P/uO6ue4Ungbw2rByDCeRwWPuZmHn/hY+6YfPKD50STfbJOiyAsbmQAsBBeTuBdAuEC/CAy8WMVGcDs0iYPQO/oHN4+wCv4vQCHsoW9UKOzKzwAV+88xFsGyQII1fnE1zTP+ba7/fj7ALKIAIx/W+UBCHU9wd8HNJLnQFfDIxBtHMAmVADZIGBLgl3eXqzOKwUgBwFbGYxidn4/AKQgXOvoPlwAUuktEJ/hV4SW1tvaXAJT8+v8bD+XZpULwIygJ4gOT+a/DzgNkyBmCIP33rMQYJPDrfOJmWX8AMgi1+MXb/EsAVu5dv4e74u9ztkUXQ7ez54EXRrfINE7NAamFzfYsOfe+Qcj0+DKrR4+tJPUlgiA3elLq+1EobbImA3UUxGAqiqv1anxKJCSqy4ALJxNUqTBtm41WY8QcjvFHA5mSevLgXUcbpOzN2Wch/uC4J2Xdb4QhpLQiINs5GEHQMuEqw7AoPEIoN0Biq6/iGWnaa3DB6ylnCxurN6mKuraiGIyur5lCVc255ewHVmMVdtEMRmNsZxpIlnShx2AbrrppptuuulGaNH+Arc9LzbYiFr8AAAAAElFTkSuQmCC"/>
+                </div>
+                <h2 id="atrr(key,func) Method">atrr(key,func) Method:</h2>
+                <p>It sets a single property to a computed value on all the matched elements.
+                    The key is the name of the property to set.
+                    The func is returning the value to set function would've had one argument which is the index of the current element.
+                </p>
+             </div>
+            </div>
+    <!-- Code  -->
+            <div>
+                <h2>Code:</h2>
+            <pre>
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;The Selecter Example&lt;title&gt;
+            &lt;script type="text/javascript" src="/jquery/jquery-1.3.2.min.js"&gt;
+            &lt;script&gt;
+            &lt;script type="text/javascript" language="javascript"&gt;
+                $(document).ready(function() {
+                    $("table").attr("border", function(arr) {
+                        return arr;
+                    })
+                });
+            &lt;script&gt;
+            &lt;head&gt;
+            &lt;body&gt;
+                        
+            &lt;table&gt;
+            &lt;tr&gt;&lt;td&gt;This is first table&lt;td&gt;&lt;tr&gt;
+            &lt;table&gt;
+                        
+            &lt;table&gt;
+            &lt;tr&gt;&lt;td&gt;This is second table&lt;td&gt;&lt;tr&gt;
+            &lt;table&gt;
+                        
+            &lt;table&gt;
+            &lt;tr&gt;&lt;td&gt;This is third table&lt;td&gt;&lt;tr&gt;
+            &lt;table&gt;
+                        
+        &lt;body&gt;
+        &lt;html&gt;
+            </pre>
+    <!-- End Code  -->
+            </div>
+    <!-- Display -->
+            <h2>Display:</h2>
+            <code>
+            <!DOCTYPE html>
+            <html lang="en">
+                <html>
+                    <head>
+                    <title>The Selecter Example</title>
+                    <script type="text/javascript" src="/jquery/jquery-1.3.2.min.js">
+                    </script>
+                    <script type="text/javascript" language="javascript">
+                        $(document).ready(function() {
+                            $("table").attr("border", function(arr) {
+                                return arr;
+                            })
+                        });
+                    </script>
+                    </head>
+                    <body>
+                                
+                    <table>
+                    <tr><td>This is first table</td></tr>
+                    </table>
+                                
+                    <table>
+                    <tr><td>This is second table</td></tr>
+                    </table>
+                                
+                    <table>
+                    <tr><td>This is third table</td></tr>
+                    </table>
+                                
+                </body>
+                </html>
+    <!-- End Display -->
+            <div class="Explainations-bottom">
+             <div class="Explainations-item">
+                <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEI0lEQVR4nO2aS08TURTH54Po2o9goqVFSKelw6O0nVBKIwqdaGNlYdDoAlsRo90Yii4IjSILohKKiYqhQQtGrSYK4aXdmCCvsuAhuiZecweo82zvYG+nA3OSf9J27kzv+c2555xpL0Hopptuuummm266EQRRbTt73O5gll3uwB/a0wI0LXcA2GubgfVULSANFDAbbL/NJ23PLCcsx2Sdd7kvaN9xgVzuALCaalgIOyCoTbKk5qgIgN3BLKs9WVyy25syAHY1IALgOghhnyUKuADMBuqXCAAtOKmizCmkphnZyp0iCMIxOQGQReDI/yhvALyMBYTjRhD5ZGAVjpcAr88ie1wtCeeVNwDheIn4y0aMWY+rBoEzr4IBiOSYVHvCBJiYmVX7uEl23M0xE/DFzMA3xB8HX2fOT8ifv6f8LwGfhQcBOt/Q/C/Usk0mlCgFZwZI0Lgr6ITUuM6PBtAcM2fGQQh7xxjO5/Ba8JoFBUDmEKrzQsd4d3/cxB8XkwaAAqEoAIQknIfv5UL40qsy3lj4nruEpK4lByHvACh/CNQl14EnBVi5k2ug0h+UBXBDZsJBmQmz4T/Iv8sdglwRkrvmGxN+AO7kWsZ5LgQpAEqd30l+Rt54CKNTMqrQIOQdgEfg/J6EAJSGKkr472dpqQaAUZisUMMfBQK3uqi2BJh9AEANfyXVJe8AKv1BHgT4mjp/PS9LQEn4q7YESAVlUEm2Vhr+qAlW9T4ghAhBSfgrqS6q9wERxFBFDX/VGyG3gj5ASbaG7S73GGyHpa6jeivsQSyDKBC42ZoLAD4IwZyQDUD3hz7weX4VpFZ+glR6S1JTCxvg+ZcF0P/uO6ue4Ungbw2rByDCeRwWPuZmHn/hY+6YfPKD50STfbJOiyAsbmQAsBBeTuBdAuEC/CAy8WMVGcDs0iYPQO/oHN4+wCv4vQCHsoW9UKOzKzwAV+88xFsGyQII1fnE1zTP+ba7/fj7ALKIAIx/W+UBCHU9wd8HNJLnQFfDIxBtHMAmVADZIGBLgl3eXqzOKwUgBwFbGYxidn4/AKQgXOvoPlwAUuktEJ/hV4SW1tvaXAJT8+v8bD+XZpULwIygJ4gOT+a/DzgNkyBmCIP33rMQYJPDrfOJmWX8AMgi1+MXb/EsAVu5dv4e74u9ztkUXQ7ez54EXRrfINE7NAamFzfYsOfe+Qcj0+DKrR4+tJPUlgiA3elLq+1EobbImA3UUxGAqiqv1anxKJCSqy4ALJxNUqTBtm41WY8QcjvFHA5mSevLgXUcbpOzN2Wch/uC4J2Xdb4QhpLQiINs5GEHQMuEqw7AoPEIoN0Biq6/iGWnaa3DB6ylnCxurN6mKuraiGIyur5lCVc255ewHVmMVdtEMRmNsZxpIlnShx2AbrrppptuuulGaNH+Arc9LzbYiFr8AAAAAElFTkSuQmCC"/>
+                </div>
+                <h2 id="hasClass(class) Method">hasClass(class) Method:</h2>
+                <p>This method returns true if the class that's specified is present on
+                    of the sets of the matched elements or otherwise it can return as false.
+                </p>
+             </div>
+            </div>
+    <!-- Code  -->
+            <div>
+                <h2>Code:</h2>
+            <pre>
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;The Selecter Example&lt;title&gt;
+                    &lt;script type="text/javascript" 
+                src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;
+                    &lt;script&gt;
+                
+                &lt;script type="text/javascript" language="javascript"&gt;
+                    $(document).ready(function() {
+                        $("#result1").text( $("p#pid1").hasClass("red") );
+                        $("#result2").text( $("p#pid2").hasClass("red") );
+                    });
+                &lt;script&gt;
+                
+                &lt;style&gt;
+                    .red { color:red; }
+                    .green { color:green; }
+                &lt;style&gt;
+                &lt;head&gt;
+                
+                &lt;body&gt;
+                
+                    &lt;p class="red" id="pid1"&gt;This is first paragraph.&lt;p&gt;
+                    &lt;p class="green" id="pid2"&gt;This is second paragraph.&lt;p&gt;
+                
+                    &lt;div id="result1"&gt;&lt;div&gt;
+                    &lt;div id="result2"&gt;&lt;div&gt;
+                
+                &lt;body&gt;
+                
+            &lt;html&gt;
+            </pre>
+            </div>
+    <!-- End Code  -->
+    <!-- Display  -->
+        <h2>Display:</h2>
+        <code>
+        <!DOCTYPE html>
+        <html lang="en">
+            <html>
+                    <head>
+                        <title>The Selecter Example</title>
+                        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+                </script>
+                
+                <script type="text/javascript" language="javascript">
+                    $(document).ready(function() {
+                        $("#result1").text( $("p#pid1").hasClass("red") );
+                        $("#result2").text( $("p#pid2").hasClass("red") );
+                    });
+                </script>
+                
+                <style>
+                    .red { color:red; }
+                    .green { color:green; }
+                </style>
+                </head>
+                
+                <body>
+                
+                    <p class="red" id="pid1">This is first paragraph.</p>
+                    <p class="green" id="pid2">This is second paragraph.</p>
+                
+                    <div id="result1"></div>
+                    <div id="result2"></div>
+                
+                </body>
+                
+            </html>
+    <!-- End Display  -->
+
+            <div class="Explainations-bottom">
+             <div class="Explainations-item">
+                <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEI0lEQVR4nO2aS08TURTH54Po2o9goqVFSKelw6O0nVBKIwqdaGNlYdDoAlsRo90Yii4IjSILohKKiYqhQQtGrSYK4aXdmCCvsuAhuiZecweo82zvYG+nA3OSf9J27kzv+c2555xpL0Hopptuuummm266EQRRbTt73O5gll3uwB/a0wI0LXcA2GubgfVULSANFDAbbL/NJ23PLCcsx2Sdd7kvaN9xgVzuALCaalgIOyCoTbKk5qgIgN3BLKs9WVyy25syAHY1IALgOghhnyUKuADMBuqXCAAtOKmizCmkphnZyp0iCMIxOQGQReDI/yhvALyMBYTjRhD5ZGAVjpcAr88ie1wtCeeVNwDheIn4y0aMWY+rBoEzr4IBiOSYVHvCBJiYmVX7uEl23M0xE/DFzMA3xB8HX2fOT8ifv6f8LwGfhQcBOt/Q/C/Usk0mlCgFZwZI0Lgr6ITUuM6PBtAcM2fGQQh7xxjO5/Ba8JoFBUDmEKrzQsd4d3/cxB8XkwaAAqEoAIQknIfv5UL40qsy3lj4nruEpK4lByHvACh/CNQl14EnBVi5k2ug0h+UBXBDZsJBmQmz4T/Iv8sdglwRkrvmGxN+AO7kWsZ5LgQpAEqd30l+Rt54CKNTMqrQIOQdgEfg/J6EAJSGKkr472dpqQaAUZisUMMfBQK3uqi2BJh9AEANfyXVJe8AKv1BHgT4mjp/PS9LQEn4q7YESAVlUEm2Vhr+qAlW9T4ghAhBSfgrqS6q9wERxFBFDX/VGyG3gj5ASbaG7S73GGyHpa6jeivsQSyDKBC42ZoLAD4IwZyQDUD3hz7weX4VpFZ+glR6S1JTCxvg+ZcF0P/uO6ue4Ungbw2rByDCeRwWPuZmHn/hY+6YfPKD50STfbJOiyAsbmQAsBBeTuBdAuEC/CAy8WMVGcDs0iYPQO/oHN4+wCv4vQCHsoW9UKOzKzwAV+88xFsGyQII1fnE1zTP+ba7/fj7ALKIAIx/W+UBCHU9wd8HNJLnQFfDIxBtHMAmVADZIGBLgl3eXqzOKwUgBwFbGYxidn4/AKQgXOvoPlwAUuktEJ/hV4SW1tvaXAJT8+v8bD+XZpULwIygJ4gOT+a/DzgNkyBmCIP33rMQYJPDrfOJmWX8AMgi1+MXb/EsAVu5dv4e74u9ztkUXQ7ez54EXRrfINE7NAamFzfYsOfe+Qcj0+DKrR4+tJPUlgiA3elLq+1EobbImA3UUxGAqiqv1anxKJCSqy4ALJxNUqTBtm41WY8QcjvFHA5mSevLgXUcbpOzN2Wch/uC4J2Xdb4QhpLQiINs5GEHQMuEqw7AoPEIoN0Biq6/iGWnaa3DB6ylnCxurN6mKuraiGIyur5lCVc255ewHVmMVdtEMRmNsZxpIlnShx2AbrrppptuuulGaNH+Arc9LzbYiFr8AAAAAElFTkSuQmCC"/>
+                </div>
+                <h2 id="text() Method">text() Method:</h2>
+                <p>The text() method is where a text that contents of all the matched elements are combined.
+                This can work for XML and the XHTML documents.</p>
+             </div>
+            </div>
+    <!-- Code  -->
+            <div>
+                <h2>Code:</h2>
+            <pre>
+                &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;title&gt;The Selecter Example&lt;title&gt;
+                    &lt;script type="text/javascript" src="/jquery/jquery-1.3.2.min.js"&gt;
+                    &lt;script&gt;
+                    
+                    &lt;script type="text/javascript" language="javascript"&gt;
+                        $(document).ready(function() {
+                            var content = $("p#pid1").text();
+                            $("p#pid2").html(content);
+                        });
+                        &lt;script&gt;
+                        &lt;style&gt;
+                            .red { color:red; }
+                            .green { color:green; }
+                        &lt;style&gt;
+                        
+                        &lt;head&gt;
+                        &lt;body&gt;
+                        
+                        &lt;p class="green" id="pid1"&gt;This is &lt;i&gt;first paragraph&lt;i&gt;.&lt;p&gt;
+                        &lt;p class="red" id="pid2"&gt;This is second paragraph.&lt;p&gt;
+                        
+                        &lt;body&gt;
+                        &lt;html&gt;
+            </pre>
+            </div>
+
+    <!-- End Code  -->
+        </div>
+    <!-- Display  -->
+    <code></code>
+    <!DOCTYPE html>
+    <html lang="en">
+        <html>
+                    <head>
+                    <title>The Selecter Example</title>
+                    <script type="text/javascript" src="/jquery/jquery-1.3.2.min.js">
+                    </script>
+                    
+                    <script type="text/javascript" language="javascript">
+                        $(document).ready(function() {
+                            var content = $("p#pid1").text();
+                            $("p#pid2").html(content);
+                        });
+                        </script>
+                        <style>
+                            .red { color:red; }
+                            .green { color:green; }
+                        </style>
+                        
+                        </head>
+                        <body>
+                        
+                        <p class="green" id="pid1">This is <i>first paragraph</i>.</p>
+                        <p class="red" id="pid2">This is second paragraph.</p>
+                        
+                        </body>
+                        </html>  
+    <!-- End Display  -->
+
+    </section>
+    <!-- End Explainations Section  -->
+  
+</body>
+</html>
